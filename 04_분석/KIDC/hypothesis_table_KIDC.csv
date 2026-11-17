@@ -1,0 +1,6 @@
+column,label_en,label_ko
+kchs__DT_DIA_KIDNEY__SR,Kidney complication testing among people with diabetes (SR %),당뇨병 환자 신장합병증 검사 수진율(표준화)
+kchs__DT_DIA_TREAT__SR,Diabetes treatment rate among diagnosed (SR %),당뇨병 치료율(표준화)
+ext__unmet_need_rate,Unmet medical need rate (SR %),미충족의료율(표준화)
+kchs__DT_117075_HYPER_AWAR__SR,Blood pressure awareness (SR %),혈압 수치 인지율(표준화)
+ext__dx_cardiometabolic_share,Screening-identified treated hypertension or diabetes burden (sum of shares %),검진 고혈압·당뇨 유질환자 부담(비율 합)
