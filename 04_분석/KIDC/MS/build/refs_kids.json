@@ -1,4 +1,27 @@
 {
+ "albekery2025underutilization": {
+  "type": "journal",
+  "authors": [
+   "Albekery MA",
+   "Alhomoud IS",
+   "Alabdulathim LS",
+   "Almajed MA",
+   "Alobaid AA",
+   "Alomair MK",
+   "Al Shehab SA",
+   "Alhasan KA",
+   "Al Hamid A"
+  ],
+  "title": "Underutilization of albuminuria screening in adults with diabetes mellitus or hypertension: a systematic review and meta-analysis",
+  "journal": "BMC Nephrol",
+  "year": 2025,
+  "vol": "27",
+  "issue": "1",
+  "pages": "18",
+  "doi": "10.1186/s12882-025-04672-5",
+  "pmid": "41345917",
+  "verified": "PubMed esummary 2026-11-12"
+ },
  "bae2022effects": {
   "type": "journal",
   "authors": [
@@ -25,20 +48,101 @@
   "pmid": "35607989",
   "verified": "PubMed esummary 2026-11-12"
  },
- "bell2015explaining": {
+ "carrero2018sex": {
   "type": "journal",
   "authors": [
-   "Bell A",
-   "Jones K"
+   "Carrero JJ",
+   "Hecking M",
+   "Chesnaye NC",
+   "Jager KJ"
   ],
-  "title": "Explaining fixed effects: random effects modeling of time-series cross-sectional and panel data",
-  "journal": "Polit Sci Res Methods",
-  "year": 2015,
-  "vol": "3",
-  "issue": "1",
-  "pages": "133-153",
-  "doi": "10.1017/psrm.2014.7",
-  "verified": "Crossref 2026-11-12"
+  "title": "Sex and gender disparities in the epidemiology and outcomes of chronic kidney disease",
+  "journal": "Nat Rev Nephrol",
+  "year": 2018,
+  "vol": "14",
+  "issue": "3",
+  "pages": "151-164",
+  "doi": "10.1038/nrneph.2017.181",
+  "pmid": "29355169",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "chang2020association": {
+  "type": "journal",
+  "authors": [
+   "Chang TI",
+   "Lim H",
+   "Park CH",
+   "Rhee CM",
+   "Kalantar-Zadeh K",
+   "Kang EW",
+   "Kang SW",
+   "Han SH"
+  ],
+  "title": "Association Between Income Disparities and Risk of Chronic Kidney Disease: a Nationwide Cohort Study of Seven Million Adults in Korea",
+  "journal": "Mayo Clin Proc",
+  "year": 2020,
+  "vol": "95",
+  "issue": "2",
+  "pages": "231-242",
+  "doi": "10.1016/j.mayocp.2019.09.028",
+  "pmid": "32029084",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "delanaye2019ckd": {
+  "type": "journal",
+  "authors": [
+   "Delanaye P",
+   "Jager KJ",
+   "Bökenkamp A",
+   "Christensson A",
+   "Dubourg L",
+   "Eriksen BO",
+   "Gaillard F",
+   "Gambaro G",
+   "van der Giet M",
+   "Glassock RJ",
+   "Indridason OS",
+   "van Londen M",
+   "Mariat C",
+   "Melsom T",
+   "Moranne O",
+   "Nordin G",
+   "Palsson R",
+   "Pottel H",
+   "Rule AD",
+   "Schaeffner E",
+   "Taal MW",
+   "White C",
+   "Grubb A",
+   "van den Brand JAJG"
+  ],
+  "title": "CKD: a Call for an Age-Adapted Definition",
+  "journal": "J Am Soc Nephrol",
+  "year": 2019,
+  "vol": "30",
+  "issue": "10",
+  "pages": "1785-1805",
+  "doi": "10.1681/ASN.2019030238",
+  "pmid": "31506289",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "duncan2001screening": {
+  "type": "journal",
+  "authors": [
+   "Duncan L",
+   "Heathcote J",
+   "Djurdjev O",
+   "Levin A"
+  ],
+  "title": "Screening for renal disease using serum creatinine: who are we missing?",
+  "journal": "Nephrol Dial Transplant",
+  "year": 2001,
+  "vol": "16",
+  "issue": "5",
+  "pages": "1042-1046",
+  "doi": "10.1093/ndt/16.5.1042",
+  "pmid": "11328914",
+  "verified": "PubMed esummary 2026-11-12"
  },
  "dupont2022spatial": {
   "type": "journal",
@@ -105,6 +209,75 @@
   "pmid": "41213283",
   "verified": "PubMed esummary 2026-11-12"
  },
+ "go2019cost": {
+  "type": "journal",
+  "authors": [
+   "Go DS",
+   "Kim SH",
+   "Park J",
+   "Ryu DR",
+   "Lee HJ",
+   "Jo MW"
+  ],
+  "title": "Cost-utility analysis of the National Health Screening Program for chronic kidney disease in Korea",
+  "journal": "Nephrology (Carlton)",
+  "year": 2019,
+  "vol": "24",
+  "issue": "1",
+  "pages": "56-64",
+  "doi": "10.1111/nep.13203",
+  "pmid": "29206319",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "hong2021trends": {
+  "type": "journal",
+  "authors": [
+   "Hong YA",
+   "Ban TH",
+   "Kang CY",
+   "Hwang SD",
+   "Choi SR",
+   "Lee H",
+   "Jung HY",
+   "Kim K",
+   "Kwon YE",
+   "Kim SH",
+   "Kim TH",
+   "Koo HS",
+   "Yoon CY",
+   "Kim K",
+   "Park J",
+   "Kim YK"
+  ],
+  "title": "Trends in epidemiologic characteristics of end-stage renal disease from 2019 Korean Renal Data System (KORDS)",
+  "journal": "Kidney Res Clin Pract",
+  "year": 2021,
+  "vol": "40",
+  "issue": "1",
+  "pages": "52-61",
+  "doi": "10.23876/j.krcp.20.202",
+  "pmid": "33789383",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "hsu2005elevated": {
+  "type": "journal",
+  "authors": [
+   "Hsu CY",
+   "McCulloch CE",
+   "Darbinian J",
+   "Go AS",
+   "Iribarren C"
+  ],
+  "title": "Elevated blood pressure and risk of end-stage renal disease in subjects without baseline kidney disease",
+  "journal": "Arch Intern Med",
+  "year": 2005,
+  "vol": "165",
+  "issue": "8",
+  "pages": "923-928",
+  "doi": "10.1001/archinte.165.8.923",
+  "pmid": "15851645",
+  "verified": "PubMed esummary 2026-11-12"
+ },
  "inskip1983methods": {
   "type": "journal",
   "authors": [
@@ -161,18 +334,42 @@
   "pmid": "26430619",
   "verified": "PubMed esummary 2026-11-12"
  },
- "kdigo2024kdigo": {
+ "kim2023regional": {
   "type": "journal",
   "authors": [
-   "Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group"
+   "Kim Y",
+   "Park J",
+   "Park JH"
   ],
-  "title": "KDIGO 2024 clinical practice guideline for the evaluation and management of chronic kidney disease",
-  "journal": "Kidney Int",
-  "year": "2024",
-  "vol": "105(4S)",
-  "pages": "S117-S314",
-  "doi": "10.1016/j.kint.2023.10.018",
-  "pmid": "38490803"
+  "title": "Regional differences in health screening participation between before and during COVID-19 pandemic",
+  "journal": "Environ Health Prev Med",
+  "year": 2023,
+  "vol": "28",
+  "issue": "",
+  "pages": "8",
+  "doi": "10.1265/ehpm.22-00239",
+  "pmid": "36697026",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "kim2024diabetic": {
+  "type": "journal",
+  "authors": [
+   "Kim NH",
+   "Seo MH",
+   "Jung JH",
+   "Han KD",
+   "Kim MK",
+   "Kim NH"
+  ],
+  "title": "2023 Diabetic Kidney Disease Fact Sheet in Korea",
+  "journal": "Diabetes Metab J",
+  "year": 2024,
+  "vol": "48",
+  "issue": "3",
+  "pages": "463-472",
+  "doi": "10.4093/dmj.2023.0310",
+  "pmid": "38499437",
+  "verified": "PubMed esummary 2026-11-12"
  },
  "kim2025burden": {
   "type": "journal",
@@ -217,6 +414,40 @@
   "verified": "PubMed esummary 2026-11-12",
   "ahead": true
  },
+ "kim2026korea": {
+  "type": "journal",
+  "authors": [
+   "Kim HC",
+   "Lee H",
+   "Choi H",
+   "Kwon H",
+   "Lee J",
+   "Cho M",
+   "Son D",
+   "Lee SG",
+   "Ahn NY",
+   "Park J",
+   "Ahn SV",
+   "Cheon DY",
+   "Heo J",
+   "Jhee JH",
+   "Kim E",
+   "Lee HH",
+   "Lee JM",
+   "Lee SW",
+   "Shin MH",
+   "Yoon M"
+  ],
+  "title": "Korea Hypertension Fact Sheet 2025: national trends in hypertension with a special analysis of hypertensive disorders of pregnancy",
+  "journal": "Clin Hypertens",
+  "year": 2026,
+  "vol": "32",
+  "issue": "",
+  "pages": "e13",
+  "doi": "10.5646/ch.2026.32.e13",
+  "pmid": "41953287",
+  "verified": "PubMed esummary 2026-11-12"
+ },
  "klag1996blood": {
   "type": "journal",
   "authors": [
@@ -254,6 +485,42 @@
   "pmid": "10960871",
   "verified": "PubMed esummary 2026-11-12"
  },
+ "komenda2014cost": {
+  "type": "journal",
+  "authors": [
+   "Komenda P",
+   "Ferguson TW",
+   "Macdonald K",
+   "Rigatto C",
+   "Koolage C",
+   "Sood MM",
+   "Tangri N"
+  ],
+  "title": "Cost-effectiveness of primary screening for CKD: a systematic review",
+  "journal": "Am J Kidney Dis",
+  "year": 2014,
+  "vol": "63",
+  "issue": "5",
+  "pages": "789-797",
+  "doi": "10.1053/j.ajkd.2013.12.012",
+  "pmid": "24529536",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "kovesdy2022epidemiology": {
+  "type": "journal",
+  "authors": [
+   "Kovesdy CP"
+  ],
+  "title": "Epidemiology of chronic kidney disease: an update 2022",
+  "journal": "Kidney Int Suppl (2011)",
+  "year": 2022,
+  "vol": "12",
+  "issue": "1",
+  "pages": "7-11",
+  "doi": "10.1016/j.kisu.2021.11.003",
+  "pmid": "35529086",
+  "verified": "PubMed esummary 2026-11-12"
+ },
  "lipsitch2010negative": {
   "type": "journal",
   "authors": [
@@ -289,6 +556,26 @@
   "pages": "e110132",
   "doi": "10.1371/journal.pone.0110132",
   "pmid": "25365039",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "park2021association": {
+  "type": "journal",
+  "authors": [
+   "Park BH",
+   "Lee BK",
+   "Ahn J",
+   "Kim NS",
+   "Park J",
+   "Kim Y"
+  ],
+  "title": "Association of Participation in Health Check-ups with Risk Factors for Cardiovascular Diseases",
+  "journal": "J Korean Med Sci",
+  "year": 2021,
+  "vol": "36",
+  "issue": "3",
+  "pages": "e19",
+  "doi": "10.3346/jkms.2021.36.e19",
+  "pmid": "33463093",
   "verified": "PubMed esummary 2026-11-12"
  },
  "park2023trends": {
@@ -355,22 +642,6 @@
   "pmid": "27566770",
   "verified": "PubMed esummary 2026-11-12"
  },
- "rue2009approximate": {
-  "type": "journal",
-  "authors": [
-   "Rue H",
-   "Martino S",
-   "Chopin N"
-  ],
-  "title": "Approximate Bayesian inference for latent Gaussian models by using integrated nested Laplace approximations",
-  "journal": "J R Stat Soc Series B Stat Methodol",
-  "year": 2009,
-  "vol": "71",
-  "issue": "2",
-  "pages": "319-392",
-  "doi": "10.1111/j.1467-9868.2008.00700.x",
-  "verified": "Crossref 2026-11-12"
- },
  "seidu2023physical": {
   "type": "journal",
   "authors": [
@@ -418,6 +689,41 @@
   "pmid": "27794523",
   "verified": "PubMed esummary 2026-11-12"
  },
+ "shin2021albuminuria": {
+  "type": "journal",
+  "authors": [
+   "Shin JI",
+   "Chang AR",
+   "Grams ME",
+   "Coresh J",
+   "Ballew SH",
+   "Surapaneni A",
+   "Matsushita K",
+   "Bilo HJG",
+   "Carrero JJ",
+   "Chodick G",
+   "Daratha KB",
+   "Jassal SK",
+   "Nadkarni GN",
+   "Nelson RG",
+   "Nowak C",
+   "Stempniewicz N",
+   "Sumida K",
+   "Traynor JP",
+   "Woodward M",
+   "Sang Y",
+   "Gansevoort RT"
+  ],
+  "title": "Albuminuria Testing in Hypertension and Diabetes: an Individual-Participant Data Meta-Analysis in a Global Consortium",
+  "journal": "Hypertension",
+  "year": 2021,
+  "vol": "78",
+  "issue": "4",
+  "pages": "1042-1052",
+  "doi": "10.1161/HYPERTENSIONAHA.121.17323",
+  "pmid": "34365812",
+  "verified": "PubMed esummary 2026-11-12"
+ },
  "shlipak2021case": {
   "type": "journal",
   "authors": [
@@ -446,24 +752,6 @@
   "pmid": "33127436",
   "verified": "PubMed esummary 2026-11-12"
  },
- "simpson2017penalising": {
-  "type": "journal",
-  "authors": [
-   "Simpson D",
-   "Rue H",
-   "Riebler A",
-   "Martins TG",
-   "Sørbye SH"
-  ],
-  "title": "Penalising model component complexity: a principled, practical approach to constructing priors",
-  "journal": "Stat Sci",
-  "year": 2017,
-  "vol": "32",
-  "issue": "1",
-  "pages": "1-28",
-  "doi": "10.1214/16-sts576",
-  "verified": "Crossref 2026-11-12"
- },
  "steegen2016increasing": {
   "type": "journal",
   "authors": [
@@ -482,6 +770,64 @@
   "pmid": "27694465",
   "verified": "PubMed esummary 2026-11-12"
  },
+ "su2023use": {
+  "type": "journal",
+  "authors": [
+   "Su CC",
+   "Lee KJ",
+   "Yen CT",
+   "Wu LH",
+   "Huang CH",
+   "Lu MZ",
+   "Cheng CL"
+  ],
+  "title": "Use of spatial panel-data models to investigate factors related to incidence of end-stage renal disease: a nationwide longitudinal study in Taiwan",
+  "journal": "BMC Public Health",
+  "year": 2023,
+  "vol": "23",
+  "issue": "1",
+  "pages": "247",
+  "doi": "10.1186/s12889-023-15189-7",
+  "pmid": "36747222",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "swedko2003serum": {
+  "type": "journal",
+  "authors": [
+   "Swedko PJ",
+   "Clark HD",
+   "Paramsothy K",
+   "Akbari A"
+  ],
+  "title": "Serum creatinine is an inadequate screening test for renal failure in elderly patients",
+  "journal": "Arch Intern Med",
+  "year": 2003,
+  "vol": "163",
+  "issue": "3",
+  "pages": "356-360",
+  "doi": "10.1001/archinte.163.3.356",
+  "pmid": "12578517",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "tsai2022role": {
+  "type": "journal",
+  "authors": [
+   "Tsai MK",
+   "Gao W",
+   "Chien KL",
+   "Hsu CC",
+   "Wen CP"
+  ],
+  "title": "Role of Physical Activity in Lowering Risk of End-Stage Renal Disease",
+  "journal": "Mayo Clin Proc",
+  "year": 2022,
+  "vol": "97",
+  "issue": "5",
+  "pages": "881-893",
+  "doi": "10.1016/j.mayocp.2021.10.027",
+  "pmid": "35414439",
+  "verified": "PubMed esummary 2026-11-12"
+ },
  "vanderweele2017sensitivity": {
   "type": "journal",
   "authors": [
@@ -496,6 +842,27 @@
   "pages": "268-274",
   "doi": "10.7326/M16-2607",
   "pmid": "28693043",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "volkova2008neighborhood": {
+  "type": "journal",
+  "authors": [
+   "Volkova N",
+   "McClellan W",
+   "Klein M",
+   "Flanders D",
+   "Kleinbaum D",
+   "Soucie JM",
+   "Presley R"
+  ],
+  "title": "Neighborhood poverty and racial differences in ESRD incidence",
+  "journal": "J Am Soc Nephrol",
+  "year": 2008,
+  "vol": "19",
+  "issue": "2",
+  "pages": "356-364",
+  "doi": "10.1681/ASN.2006080934",
+  "pmid": "18057219",
   "verified": "PubMed esummary 2026-11-12"
  },
  "vonelm2007strengthening": {
@@ -518,13 +885,82 @@
   "pmid": "18064739",
   "verified": "PubMed esummary 2026-11-12"
  },
+ "zeng2018associations": {
+  "type": "journal",
+  "authors": [
+   "Zeng X",
+   "Liu J",
+   "Tao S",
+   "Hong HG",
+   "Li Y",
+   "Fu P"
+  ],
+  "title": "Associations between socioeconomic status and chronic kidney disease: a meta-analysis",
+  "journal": "J Epidemiol Community Health",
+  "year": 2018,
+  "vol": "72",
+  "issue": "4",
+  "pages": "270-279",
+  "doi": "10.1136/jech-2017-209815",
+  "pmid": "29437863",
+  "verified": "PubMed esummary 2026-11-12"
+ },
+ "bell2015explaining": {
+  "type": "journal",
+  "authors": [
+   "Bell A",
+   "Jones K"
+  ],
+  "title": "Explaining fixed effects: random effects modeling of time-series cross-sectional and panel data",
+  "journal": "Polit Sci Res Methods",
+  "year": 2015,
+  "vol": "3",
+  "issue": "1",
+  "pages": "133-153",
+  "doi": "10.1017/psrm.2014.7",
+  "verified": "Crossref 2026-11-12"
+ },
+ "rue2009approximate": {
+  "type": "journal",
+  "authors": [
+   "Rue H",
+   "Martino S",
+   "Chopin N"
+  ],
+  "title": "Approximate Bayesian inference for latent Gaussian models by using integrated nested Laplace approximations",
+  "journal": "J R Stat Soc Series B Stat Methodol",
+  "year": 2009,
+  "vol": "71",
+  "issue": "2",
+  "pages": "319-392",
+  "doi": "10.1111/j.1467-9868.2008.00700.x",
+  "verified": "Crossref 2026-11-12"
+ },
+ "simpson2017penalising": {
+  "type": "journal",
+  "authors": [
+   "Simpson D",
+   "Rue H",
+   "Riebler A",
+   "Martins TG",
+   "Sørbye SH"
+  ],
+  "title": "Penalising model component complexity: a principled, practical approach to constructing priors",
+  "journal": "Stat Sci",
+  "year": 2017,
+  "vol": "32",
+  "issue": "1",
+  "pages": "1-28",
+  "doi": "10.1214/16-sts576",
+  "verified": "Crossref 2026-11-12"
+ },
  "web:kosis2026screening": {
   "type": "web",
   "authors": "National Health Insurance Service",
-  "title": "National health screening statistics: general health screening judgement results by administrative district (DT_35007_N103, DT_35007_N098) and by sex and 5-year age group (DT_35007_N104, DT_35007_N099), and distribution of estimated glomerular filtration rate (DT_35007_N128, DT_35007_N129), 2011-2024. Korean Statistical Information Service",
+  "title": "National health screening statistics: general health screening judgement results by administrative district (DT_35007_N103, DT_35007_N098) and by sex and 5-year age group (DT_35007_N104, DT_35007_N099), distribution of estimated glomerular filtration rate (DT_35007_N128, DT_35007_N129) and distribution of dipstick proteinuria (DT_35007_N064, DT_35007_N065), 2011-2024. Korean Statistical Information Service",
   "url": "https://kosis.kr",
   "year": 2026,
-  "accessed": "11 November 2026"
+  "accessed": "19 November 2026"
  },
  "web:mois2026population": {
   "type": "web",
@@ -548,5 +984,25 @@
   "url": "https://www.R-project.org/",
   "year": 2026,
   "accessed": "20 October 2026"
+ },
+ "kdigo2024kdigo": {
+  "type": "journal",
+  "authors": [
+   "Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group"
+  ],
+  "title": "KDIGO 2024 clinical practice guideline for the evaluation and management of chronic kidney disease",
+  "journal": "Kidney Int",
+  "year": "2024",
+  "vol": "105(4S)",
+  "pages": "S117-S314",
+  "doi": "10.1016/j.kint.2023.10.018",
+  "pmid": "38490803"
+ },
+ "web:mohw2026standard": {
+  "type": "web",
+  "authors": "Ministry of Health and Welfare",
+  "title": "Health screening implementation standards [in Korean]. Notices 2014-111, 2016-252, 2023-292 and 2026-6: annex on the general health screening judgement and test-specific judgement criteria, and annex on test methods",
+  "url": "https://www.law.go.kr",
+  "accessed": "19 November 2026"
  }
 }

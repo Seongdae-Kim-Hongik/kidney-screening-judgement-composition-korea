@@ -4,7 +4,7 @@ Analysis code for the manuscript
 
 > Kim S. *Reduced filtration or proteinuria? Unpacking a kidney screening judgement in Korea.* Manuscript under review.
 
-Archived version: Zenodo, https://doi.org/10.5281/zenodo.24295187.
+Archived versions: Zenodo, https://doi.org/10.5281/zenodo.24295187 (v1.0.0, original submission); v1.1.0 (revision) is archived as a new version of the same Zenodo record.
 
 ## Contents
 
@@ -23,7 +23,8 @@ Folder and some column names are in Korean because the source tables are Korean;
 All inputs are public, aggregated statistics. No individual-level data are included.
 
 - General health screening examinees with a judgement and examinees judged to have suspected kidney disease by district (KOSIS DT_35007_N098, DT_35007_N103) and nationally by sex and 5-year age group (DT_35007_N099, DT_35007_N104): National Health Insurance Service via KOSIS.
-- Distributions of estimated glomerular filtration rate (DT_35007_N128 by province, DT_35007_N129 national) and of dipstick proteinuria (DT_35007_N064 by province, DT_35007_N065 national), 2012-2024, retrieved on 17 November 2026.
+- Distributions of estimated glomerular filtration rate (DT_35007_N128 by province, DT_35007_N129 national) and of dipstick proteinuria (DT_35007_N064 by province, DT_35007_N065 national), 2012-2024, retrieved on 17 November 2026; national distributions by sex and 5-year age group of eGFR (N129), dipstick proteinuria (N065) and serum creatinine (DT_35007_N079), retrieved again on 19 November 2026 for the revision.
+- Ministry of Health and Welfare, health screening implementation standards (editions effective 2014, 2017, 2024 and 2026), annexes on judgement criteria and test methods, National Law Information Center (https://www.law.go.kr).
 - Population by sex and 5-year age group: Ministry of the Interior and Safety, resident registration statistics (Changwon 2023 corrected; `population_override`).
 - District covariates: KOSIS, the Community Health Survey, National Health Insurance Service screening and regional statistics, the census (tertiary education) and public sports facility surveys. Comparison outcomes (people treated for gastric cancer and for infectious diseases) come from National Health Insurance regional statistics.
 
@@ -42,7 +43,9 @@ Run from the repository root (set `ST_DATA_ROOT` and `ST_FBDZIP_CORRECTED` to th
 | 7 | `85_window_maps.R`, `86_yearly_maps_ehsa_kidc.py` (wraps `86_yearly_maps_ehsa.py`), `87_window_grid.py` | Maps and emerging hot spot analysis |
 | 8 | `88g_sens_prep.py KIDC std3 INFECT,GCA`, `88g_sens_suite_kidc.R` (`GROUP=1..6`), `88h_ppc_varpart.R`, `88k_struct_kh.R` (nb, struct, review), `88k_struct_kh_kidc.R` with `kh_constraints_kidc.R` (kh), `89g_sens_combine.py` | Sensitivity analyses, comparison outcomes, Knorr-Held models |
 | 9 | `88K_kidc_component_panel.py`, `88K_kidc_component_sens.R` | Principal model with provincial eGFR and proteinuria shares added |
-| 10 | `04_분석/KIDC/MS/build/run_all.sh` (`build_refs_kids.py`, `figs_kids.py`, `tables_kids.py`, `build_ms.py`, `esm_kids.py`, `check_ms.py`) | Manuscript, supplementary material, figures and checks |
+| 10 | `04_분석/KIDC/MS/build/run_all.sh` (`build_refs_kids.py`, `figs_kids.py`, `tables_kids.py`, `build_ms.py`, `esm_kids.py`, `check_ms.py`; `rr_kids.py` reads the revision outputs) | Manuscript, supplementary material, figures and checks |
+| 11 | `88R_kidc_fetch_N065_age.py`, `88R_kidc_rr_reconcile.py` (revision) | National reconciliation of the judgement by sex and 5-year age group with eGFR, dipstick proteinuria and creatinine distributions; union bounds; direct standardisation |
+| 12 | `99K3_kidc_E_uncert.py` then `88g_sens_suite_kidc.R` with `GROUP=7` (revision) | Bias analysis of the estimated examinee age structure: 20 random and 8 exposure-linked perturbations of expected numbers, principal model refitted |
 
 The boundary file is found at `data/boundary/final.shp` by default; set `ST_SHP` to use another path.
 

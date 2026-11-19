@@ -90,4 +90,8 @@ if(GROUP==6){
     summ("bw_twoway","between_within",fitX(c(setdiff(MAINV,ROBV),BW),d),d,"robust set: district mean + two-way centred deviation",vars=c(setdiff(MAINV,ROBV),BW))}
   DR<-Sys.getenv("DROPS",unset="");if(nzchar(DR)){DL<-fromJSON(DR);for(nm in names(DL)){an<-paste0("drop_",nm);if(dn(an))next;v<-setdiff(MAINV,DL[[nm]]);summ(an,"drop_covariates",fitX(v,DD),DD,paste("without",paste(DL[[nm]],collapse="+")),vars=v)}}
 }
+# GROUP 7 (2026-11-19, KIDC 개정판): 시군구 수검자 성·연령 구조 가정 불확실성 — 99K3 대체 E(무작위 20회 + 노출 연동 기울기 8개)로 주모형 재적합
+if(GROUP==7){X<-rdp("S41_panel_Eunc.csv");EC<-setdiff(grep("^E_",names(X),value=TRUE),"E_base");k<-match(paste(DD$year,DD$fbd_region),paste(X$year,X$fbd_region));stopifnot(!anyNA(k),max(abs(X$E_base[k]/DD$E-1))<1e-6)
+  sel<-Sys.getenv("EUNC",unset="");if(nzchar(sel))EC<-intersect(EC,strsplit(sel,",")[[1]])
+  for(ec in EC){an<-paste0("U1_",ec);if(dn(an))next;d<-DD;d$E<-X[[ec]][k];summ(an,"standardisation_uncertainty",fitX(MAINV,d),d,paste("expected numbers =",ec))}}
 LOG("GROUP %d done",GROUP)

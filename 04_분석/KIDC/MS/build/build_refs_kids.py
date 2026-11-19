@@ -14,6 +14,7 @@ WEB = {
  "web:kosis2026screening": dict(type="web", authors="National Health Insurance Service", title="National health screening statistics: general health screening judgement results by administrative district (DT_35007_N103, DT_35007_N098) and by sex and 5-year age group (DT_35007_N104, DT_35007_N099), and distribution of estimated glomerular filtration rate (DT_35007_N128, DT_35007_N129), 2011-2024. Korean Statistical Information Service", url="https://kosis.kr", year=2026, accessed="11 November 2026"),
  "web:mois2026population": dict(type="web", authors="Ministry of the Interior and Safety", title="Resident registration population by district, sex and 5-year age group, 2012-2024", url="https://jumin.mois.go.kr", year=2026, accessed="20 October 2026"),
  "web:rcore2026": dict(type="web", authors="R Core Team", title="R: a language and environment for statistical computing. Version 4.6.0. Vienna: R Foundation for Statistical Computing", url="https://www.R-project.org/", year=2026, accessed="20 October 2026"),
+ "web:mohw2026standard": dict(type="web", authors="Ministry of Health and Welfare", title="Health screening implementation standards [in Korean]. Notices 2014-111, 2016-252, 2023-292 and 2026-6: annex on the general health screening judgement and test-specific judgement criteria, and annex on test methods", url="https://www.law.go.kr", accessed="19 November 2026"),
  "web:nhis2019report": dict(type="report", authors="National Health Insurance Service", title="Health screening statistics: statistical information report [in Korean]", publisher="National Health Insurance Service, Wonju, Korea", year=2021),
 }
 out = {}
@@ -83,7 +84,7 @@ AUTHOR_FIX = {"Cheol Seong S": "Seong SC", "Heon Park J": "Park JH", "Hyon Bang 
 for _k, _v in out.items():
     if isinstance(_v.get("authors"), list): _v["authors"] = [AUTHOR_FIX.get(a, a) for a in _v["authors"]]
 assert not any("Cheol Seong" in a for v in out.values() if isinstance(v.get("authors"), list) for a in v["authors"])
-# 13호 review 1회차: 출처 메타 오류 교정(PubMed 제목 역따옴표, MDPI 논문 번호 누락)
+# 13호 /333 1회차: 출처 메타 오류 교정(PubMed 제목 역따옴표, MDPI 논문 번호 누락)
 json.dump(out, open(os.path.join(HERE, "refs_kids.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 import re as _re
 for _k, _v in out.items():   # 9호부터: 한국인 이름 뒤집힘 검사(두 음절 이름 + 한 글자 이니셜)

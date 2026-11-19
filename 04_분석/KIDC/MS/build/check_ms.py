@@ -81,8 +81,8 @@ ok("결과: PASS" in cc, "인용 순서 검사기 PASS")
 cited = []
 for m in re.finditer(r"(Table S\d|Figure S\d)", body):
     if m.group(1) not in cited: cited.append(m.group(1))
-listed = ["Table S1", "Table S2", "Table S3", "Table S4", "Table S5", "Figure S1", "Table S6", "Table S7"]
-ok(cited == [x for x in listed if x in cited] and set(listed) - set(cited) <= {"Table S7"}, f"보충 인용 순서 {cited}")
+listed = ["Table S1", "Table S2", "Table S3", "Table S4", "Table S5", "Figure S1", "Table S6", "Table S7", "Table S8"]
+ok(cited == [x for x in listed if x in cited] and set(listed) - set(cited) <= {"Table S8"}, f"보충 인용 순서 {cited}")
 ok(all(x in supt for x in listed) and "Journal of Nephrology" in supt[:800] and "kimsd@hongik.ac.kr" in supt[:800] and "Supplementary material" in body, "보충 첫 쪽 정보·명칭")
 sr = re.findall(r"\[S(\d+)\]", supt); fs_ = []; [fs_.append(int(n)) for n in sr if int(n) not in fs_]; ok(fs_ == list(range(1, 11)) and "S10. " in supt, "보충 참고문헌 S1-S10 순서")
 ok("[ZENODO DOI]" not in dx + cov and re.search(r"10\.5281/zenodo\.\d+", dx) and re.search(r"10\.5281/zenodo\.\d+", cov), "Zenodo 공개 DOI")

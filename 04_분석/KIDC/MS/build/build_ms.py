@@ -99,7 +99,7 @@ FIGCAP = {
  2: ("Rate ratios per 1 standard deviation with 95% credible intervals for the three subset-stable district characteristics and the three physical activity characteristics across models: the principal model, models with Knorr-Held type II and type IV space–time interactions, the principal model with provincial eGFR and proteinuria shares added, the principal model fitted to 2015–2018 and to 2019–2023 only, and the principal model with expected numbers computed from the resident population",
      "Alt text: Forest plot of rate ratios across seven models. The treated hypertension and diabetes share, suspected hypertension and suspected diabetes lie above 1 in every model; walking, moderate or vigorous activity and public sports facilities have intervals that include 1."),
 }
-SUPM = "Supplementary material (Supplementary_material.pdf): Table S1, composition of the judgement; Table S2, supplementary methods; Table S3, covariates; Table S4, panel checks; Table S5, robustness, comparison outcomes, negative controls and model checks; Figure S1, persistence of the district pattern; Table S6, calendar windows; Table S7, STROBE checklist"
+SUPM = "Supplementary material (Supplementary_material.pdf): Table S1, composition of the judgement; Table S2, supplementary methods; Table S3, covariates; Table S4, panel checks; Table S5, robustness, comparison outcomes, negative controls and model checks; Figure S1, persistence of the district pattern; Table S6, calendar windows; Table S7, uncertainty in the estimated examinee structure; Table S8, STROBE checklist"
 
 def build(words=None):
     D = read_draft(); J = TX(cite="paren")
@@ -108,13 +108,6 @@ def build(words=None):
     J.para(f"{AUTHOR}, PhD", before=12); J.para(AFFIL)
     J.para(f"Corresponding author: {AUTHOR}, PhD, {ADDRESS}. Telephone: {PHONE}. Fax: not available. Email: {EMAIL}. ORCID: {ORCID}", before=12)
     J.para(f"Word count (main text): {words if words else '[WORDS]'}. Tables: 2. Figures: 2. Supplementary material: 1 file", before=12)
-    J.para(f"<b>Data availability</b> {DATA}", before=12)
-    J.para(f"<b>Conflicts of interest</b> {COI}")
-    J.para(f"<b>Author contributions (CRediT)</b> {CREDIT}")
-    J.para(f"<b>Funding</b> {FUND}")
-    J.para(f"<b>Acknowledgements</b> {ACK}")
-    J.para(f"<b>Ethical approval</b> {IRB}")
-    J.para(f"<b>Patient consent</b> {CONSENT}")
     J.page_break()
     J.head("Abstract", 1)
     for p in D["Abstract"]:
@@ -132,11 +125,14 @@ def build(words=None):
         if p.startswith("### "): J.head(p[4:].strip(), 2); continue
         J.para(pandoc_cites(p), indent=True)
     J.counting = False
-    J.head("Ethical disclosure", 1)
-    J.para(f"{IRB} {CONSENT}")
-    J.head("Conflicts of interest", 1); J.para(COI)
-    J.head("Funding", 1); J.para(FUND)
-    J.head("Data availability", 1); J.para(DATA)
+    J.head("Declarations", 1)
+    J.head("Ethical disclosure", 2); J.para(IRB)
+    J.head("Consent to participate", 2); J.para(CONSENT)
+    J.head("Conflicts of interest", 2); J.para(COI)
+    J.head("Funding", 2); J.para(FUND)
+    J.head("Data availability", 2); J.para(DATA)
+    J.head("Author contributions (CRediT)", 2); J.para(CREDIT)
+    J.head("Acknowledgements", 2); J.para(ACK)
     assert sorted(J.cites) == KEYS, (set(J.cites) ^ set(KEYS))
     J.head("References", 1); J.raw = True; rl = []
     for i, k in enumerate(J.cites, 1): s_ = f"{i}. " + ref(k); rl.append(s_); J.para(s_)
@@ -146,10 +142,10 @@ def build(words=None):
     for k in sorted(FIGCAP): J.para(f"<b>Figure {k}.</b> {FIGCAP[k][0]}."); J.para(FIGCAP[k][1])
     J.head("Supplementary material", 1); J.para(SUPM)
     return J, rl, D
-def count_words(path):   # 본문 = Introduction ~ Discussion 끝(Ethical disclosure 앞)
+def count_words(path):   # 본문 = Introduction ~ Discussion 끝(Declarations 앞)
     from docx import Document
     ps = [p.text for p in Document(path).paragraphs]; t = "\n".join(ps)
-    a = t.find("\nIntroduction\n"); body = len(t[a:t.find("\nEthical disclosure\n", a)].split())
+    a = t.find("\nIntroduction\n"); body = len(t[a:t.find("\nDeclarations\n", a)].split())
     i0 = ps.index("Abstract"); i1 = next(i for i, p in enumerate(ps) if p.startswith("Keywords"))
     ab = len(" ".join(ps[i0 + 1:i1]).split())
     return body, ab
